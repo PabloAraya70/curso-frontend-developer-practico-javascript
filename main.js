@@ -1,16 +1,3 @@
-// const menuEmail = document.getElementsByClassName("navbar-email");
-// const desktopMenu = document.getElementsByClassName("desktop-menu");
-
-// menuEmail.item(0).addEventListener("click", toggleDesktopMenu)
-
-// function toggleDesktopMenu() {
-//     if (desktopMenu.item(0).style.display == "block") {
-//         desktopMenu.item(0).style.display = ""
-//     } else {
-//         desktopMenu.item(0).style.display = "block"
-//     }
-// }
-// navbar-shopping-cart  product-detail
 const menuEmail = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
 const menuIcon = document.querySelector('.menu');
@@ -50,7 +37,7 @@ function toggleproductDetail() {
 }
 
 function renderProducts (arr) {
-    for (product of productList) {
+    for (let product of productList) {
         const productCard = document.createElement("div");
         productCard.classList.add("product-card");
         const img = document.createElement("img");
